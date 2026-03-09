@@ -1,0 +1,166 @@
+[
+  {
+    "ContainingType": "Software.Api.CatalogItems.Operations.GetAllCatalogItems",
+    "Method": "HandleAsync",
+    "RelativePath": "catalog",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Software.Api.Vendors.VendorController",
+    "Method": "AddVendorAsync",
+    "RelativePath": "vendors",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Software.Api.Vendors.Models.CreateVendorRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Software.Api.Vendors.VendorController",
+    "Method": "GetAllVendorsAsync",
+    "RelativePath": "vendors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Software.Api.Vendors.VendorController",
+    "Method": "GetVendorByIdAsync",
+    "RelativePath": "vendors/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Software.Api.Vendors.VendorController",
+    "Method": "UpdatePoc",
+    "RelativePath": "vendors/{id}/point-of-contact",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Software.Api.Vendors.Models.VendorPointOfContactModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Software.Api.CatalogItems.Operations.AddCatalogItem",
+    "Method": "AddCatalogItemAsync",
+    "RelativePath": "vendors/{vendorId:guid}/catalog-items",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vendorId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Software.Api.CatalogItems.Operations.CatalogCreateModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Software.Api.CatalogItems.Operations.CatalogCreateModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "Software.Api.CatalogItems.Operations.GetCatalogItemsByVendor",
+    "Method": "HandleAsync",
+    "RelativePath": "vendors/{vendorId:guid}/catalog-items",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vendorId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Software.Api.CatalogItems.Operations.DeprecateCatalogItem",
+    "Method": "HandleAsync",
+    "RelativePath": "vendors/{vendorId:guid}/catalog-items/{itemId:guid}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vendorId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "itemId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
