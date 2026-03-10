@@ -670,3 +670,4 @@ C:\Users\Student\class\web-api-200\src\SoftwareSolution\Software.Api\obj\Debug\n
 C:\Users\Student\class\web-api-200\src\SoftwareSolution\Software.Api\obj\Debug\net10.0\Software.Api.pdb
 C:\Users\Student\class\web-api-200\src\SoftwareSolution\Software.Api\obj\Debug\net10.0\Software.Api.genruntimeconfig.cache
 C:\Users\Student\class\web-api-200\src\SoftwareSolution\Software.Api\obj\Debug\net10.0\ref\Software.Api.dll
+C:\Users\Student\class\web-api-200\src\SoftwareSolution\Software.Api\obj\Debug\net10.0\Software.Api.sourcelink.json

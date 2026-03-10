@@ -2,6 +2,7 @@
 using Marten;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using Software.Api.Clients;
 using Software.Api.Vendors.Data;
 using Software.Api.Vendors.Models;
@@ -17,10 +18,11 @@ public class VendorController(IDocumentSession session) : ControllerBase
     public async Task<ActionResult> AddVendorAsync(
         [FromBody] CreateVendorRequestModel request,
         [FromServices] IDoNotifications api,
-        [FromServices] TimeProvider clock
+        [FromServices] TimeProvider clock,
+        [FromServices] IOptions<BlockedVendorsOptions> blockedVendors
         )
     {
-        if(request.Name.Trim().ToLower() == "oracle")
+        if (blockedVendors.Value.BlockedNames.Any(n => n == request.Name.Trim().ToLower()))
         {
             return BadRequest("We are not allowed to do business with them");
         }
@@ -44,13 +46,12 @@ public class VendorController(IDocumentSession session) : ControllerBase
 
     [HttpPut("/vendors/{id:guid}/point-of-contact")]
     [Authorize(Policy = "SoftwareCenterManager")]
+    [ServiceFilter<VendorExistsFilter>]
     public async Task<ActionResult> UpdatePoc(Guid id, [FromBody] VendorPointOfContactModel request)
     {
-        var vendor = await session.LoadAsync<VendorEntity>(id);
-        if (vendor is null)
-        {
-            return NotFound();
-        }
+        //var vendor = await session.LoadAsync<VendorEntity>(id);
+        var vendor = (VendorEntity)HttpContext.Items[VendorExistsFilter.VendorKey]!;
+
         vendor.PointOfContact = request;
         session.Store(vendor);
         await session.SaveChangesAsync();
@@ -59,13 +60,10 @@ public class VendorController(IDocumentSession session) : ControllerBase
 
     [HttpGet("/vendors/{id:guid}")]
     [Authorize]
-    public async Task<ActionResult> GetVendorByIdAsync(Guid id, CancellationToken token)
+    [ServiceFilter<VendorExistsFilter>]
+    public async Task<ActionResult> GetVendorByIdAsync(Guid id)
     {
-        var vendorEntity = await session.LoadAsync<VendorEntity>(id, token);
-        if (vendorEntity is null)
-        {
-            return NotFound();
-        }
+        var vendorEntity = (VendorEntity)HttpContext.Items[VendorExistsFilter.VendorKey]!;
         return Ok(vendorEntity.ToDetails());
     }
 }

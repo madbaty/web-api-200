@@ -2,6 +2,7 @@ using JasperFx.CommandLine.Descriptions;
 using Marten;
 using Software.Api.CatalogItems;
 using Software.Api.Clients;
+using Software.Api.Vendors;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -45,7 +46,13 @@ builder.Services.AddHttpClient<NotificationsApi>(client =>
     client.BaseAddress = new Uri("https+http://notification-api");
 });
 
+builder.Services.Configure<BlockedVendorsOptions>(
+    builder.Configuration.GetSection("BlockedVendors")
+    );
+
 builder.Services.AddScoped<IDoNotifications>(sp => sp.GetRequiredService<NotificationsApi>());
+builder.Services.AddScoped<VendorExistsFilter>();
+
 var app = builder.Build();
 
 
