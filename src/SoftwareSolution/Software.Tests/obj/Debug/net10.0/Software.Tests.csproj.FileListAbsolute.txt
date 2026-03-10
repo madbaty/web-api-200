@@ -1791,3 +1791,8 @@ C:\Users\Student\class\web-api-200\src\SoftwareSolution\Software.Tests\obj\Debug
 C:\Users\Student\class\web-api-200\src\SoftwareSolution\Software.Tests\obj\Debug\net10.0\Software.Tests.genruntimeconfig.cache
 C:\Users\Student\class\web-api-200\src\SoftwareSolution\Software.Tests\obj\Debug\net10.0\ref\Software.Tests.dll
 C:\Users\Student\class\web-api-200\src\SoftwareSolution\Software.Tests\obj\Debug\net10.0\Software.Tests.sourcelink.json
+C:\Users\Student\class\web-api-200\src\SoftwareSolution\Software.Tests\bin\Debug\net10.0\NewId.dll
+C:\Users\Student\class\web-api-200\src\SoftwareSolution\Software.Tests\bin\Debug\net10.0\Wolverine.dll
+C:\Users\Student\class\web-api-200\src\SoftwareSolution\Software.Tests\bin\Debug\net10.0\Wolverine.Marten.dll
+C:\Users\Student\class\web-api-200\src\SoftwareSolution\Software.Tests\bin\Debug\net10.0\Wolverine.Postgresql.dll
+C:\Users\Student\class\web-api-200\src\SoftwareSolution\Software.Tests\bin\Debug\net10.0\Wolverine.RDBMS.dll

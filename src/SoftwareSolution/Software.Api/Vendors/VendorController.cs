@@ -6,6 +6,7 @@ using Microsoft.Extensions.Options;
 using Software.Api.Clients;
 using Software.Api.Vendors.Data;
 using Software.Api.Vendors.Models;
+using Wolverine;
 
 namespace Software.Api.Vendors;
 
@@ -17,7 +18,7 @@ public class VendorController(IDocumentSession session) : ControllerBase
     [Authorize(Policy = "SoftwareCenterManager")]
     public async Task<ActionResult> AddVendorAsync(
         [FromBody] CreateVendorRequestModel request,
-        [FromServices] IDoNotifications api,
+        [FromServices] IMessageBus bus,
         [FromServices] TimeProvider clock,
         [FromServices] IOptions<BlockedVendorsOptions> blockedVendors
         )
@@ -29,7 +30,9 @@ public class VendorController(IDocumentSession session) : ControllerBase
 
         var entityToSave = VendorEntity.From(request, clock);
         session.Store(entityToSave);
-        await api.SendNotification(new SoftwareShared.Notifications.NotificationRequest { Message = "New vendor added " + request.Name });
+        var command = new SoftwareShared.Notifications.NotificationRequest { Message = "New vendor added " + request.Name };
+        await bus.SendAsync(command);
+        //bus.ScheduleAsync(command, TimeSpan.FromDays(30));
         await session.SaveChangesAsync();
 
         return Created($"/vendors/{entityToSave.Id}", entityToSave.ToDetails());

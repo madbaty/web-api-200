@@ -10,9 +10,10 @@
 
   <ItemGroup>
     <PackageReference Include="Aspire.Npgsql" Version="13.1.2" />
-    <PackageReference Include="Marten.AspNetCore" Version="8.22.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.3" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.3" />
+    <PackageReference Include="Marten.AspNetCore" Version="8.23.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.4" />
+    <PackageReference Include="WolverineFx.Marten" Version="5.18.0" />
   </ItemGroup>
 
   <ItemGroup>

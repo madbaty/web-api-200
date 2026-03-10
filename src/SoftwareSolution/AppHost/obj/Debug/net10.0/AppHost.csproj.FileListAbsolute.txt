@@ -311,3 +311,4 @@ C:\Users\Student\class\web-api-200\src\SoftwareSolution\AppHost\obj\Debug\net10.
 C:\Users\Student\class\web-api-200\src\SoftwareSolution\AppHost\obj\Debug\net10.0\AppHost.pdb
 C:\Users\Student\class\web-api-200\src\SoftwareSolution\AppHost\obj\Debug\net10.0\AppHost.genruntimeconfig.cache
 C:\Users\Student\class\web-api-200\src\SoftwareSolution\AppHost\obj\Debug\net10.0\ref\AppHost.dll
+C:\Users\Student\class\web-api-200\src\SoftwareSolution\AppHost\obj\Debug\net10.0\AppHost.sourcelink.json

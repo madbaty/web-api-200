@@ -3,9 +3,17 @@ using Marten;
 using Software.Api.CatalogItems;
 using Software.Api.Clients;
 using Software.Api.Vendors;
+using Wolverine;
+using Wolverine.Marten;
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.UseWolverine(opt =>
+{
+    opt.Policies.UseDurableLocalQueues();
+});
+
 builder.AddNpgsqlDataSource("software-db"); 
 builder.Services.AddValidation(); 
 builder.AddServiceDefaults(); 
@@ -25,7 +33,6 @@ builder.Services.AddAuthorizationBuilder().AddPolicy("SoftwareCenterManager", po
     pol.RequireRole("SoftwareCenter");
 });
 
-
 builder.Services.AddControllers();
 
 builder.Services.AddOpenApi();
@@ -33,12 +40,10 @@ builder.Services.AddOpenApi();
 var connectionString = builder.Configuration.GetConnectionString("software-db") ??
     throw new Exception("no connection string");
 
-builder.Services.AddMarten(options =>
+builder.Services.AddMarten(options => 
 {
 
-
-}).UseLightweightSessions().UseNpgsqlDataSource();
-
+}).UseLightweightSessions().UseNpgsqlDataSource().IntegrateWithWolverine();
 
 builder.Services.AddHttpClient<NotificationsApi>(client =>
 {
@@ -53,8 +58,9 @@ builder.Services.Configure<BlockedVendorsOptions>(
 builder.Services.AddScoped<IDoNotifications>(sp => sp.GetRequiredService<NotificationsApi>());
 builder.Services.AddScoped<VendorExistsFilter>();
 
-var app = builder.Build();
+builder.Services.AddHostedService<NotificationBackgroundWorker>();
 
+var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {

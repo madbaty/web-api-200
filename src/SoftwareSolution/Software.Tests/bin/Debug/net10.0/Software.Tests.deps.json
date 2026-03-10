@@ -132,8 +132,8 @@
           "Microsoft.AspNetCore.WebSockets": "10.0.0.0",
           "Microsoft.AspNetCore.WebUtilities": "10.0.0.0",
           "Microsoft.CSharp": "10.0.0.0",
-          "Microsoft.Extensions.Caching.Abstractions": "10.0.0.0",
-          "Microsoft.Extensions.Caching.Memory": "10.0.0.0",
+          "Microsoft.Extensions.Caching.Abstractions.Reference": "10.0.0.0",
+          "Microsoft.Extensions.Caching.Memory.Reference": "10.0.0.0",
           "Microsoft.Extensions.Configuration.Abstractions.Reference": "10.0.0.0",
           "Microsoft.Extensions.Configuration.Binder.Reference": "10.0.0.0",
           "Microsoft.Extensions.Configuration.CommandLine.Reference": "10.0.0.0",
@@ -362,7 +362,7 @@
       "Alba/8.4.0": {
         "dependencies": {
           "IdentityModel": "6.2.0",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.3",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.4",
           "Microsoft.AspNetCore.Mvc.Testing": "10.0.0"
         },
         "runtime": {
@@ -576,7 +576,7 @@
           "lib/net6.0/IdentityModel.dll": {}
         }
       },
-      "JasperFx/1.20.0": {
+      "JasperFx/1.21.0": {
         "dependencies": {
           "FastExpressionCompiler": "5.3.0",
           "ImTools": "4.0.0",
@@ -589,22 +589,22 @@
         },
         "runtime": {
           "lib/net10.0/JasperFx.dll": {
-            "assemblyVersion": "1.20.0.0",
-            "fileVersion": "1.20.0.0"
+            "assemblyVersion": "1.21.0.0",
+            "fileVersion": "1.21.0.0"
           }
         },
         "compile": {
           "lib/net10.0/JasperFx.dll": {}
         }
       },
-      "JasperFx.Events/1.22.0": {
+      "JasperFx.Events/1.23.1": {
         "dependencies": {
-          "JasperFx": "1.20.0"
+          "JasperFx": "1.21.0"
         },
         "runtime": {
           "lib/net10.0/JasperFx.Events.dll": {
-            "assemblyVersion": "1.22.0.0",
-            "fileVersion": "1.22.0.0"
+            "assemblyVersion": "1.23.1.0",
+            "fileVersion": "1.23.1.0"
           }
         },
         "compile": {
@@ -613,7 +613,7 @@
       },
       "JasperFx.RuntimeCompiler/4.4.0": {
         "dependencies": {
-          "JasperFx": "1.20.0",
+          "JasperFx": "1.21.0",
           "Microsoft.CodeAnalysis": "5.0.0",
           "Microsoft.CodeAnalysis.CSharp": "5.0.0",
           "Microsoft.CodeAnalysis.Scripting": "5.0.0",
@@ -629,36 +629,36 @@
           "lib/net10.0/JasperFx.RuntimeCompiler.dll": {}
         }
       },
-      "Marten/8.22.2": {
+      "Marten/8.23.0": {
         "dependencies": {
           "FSharp.Core": "9.0.100",
-          "JasperFx": "1.20.0",
-          "JasperFx.Events": "1.22.0",
+          "JasperFx": "1.21.0",
+          "JasperFx.Events": "1.23.1",
           "JasperFx.RuntimeCompiler": "4.4.0",
           "Microsoft.Extensions.Hosting.Abstractions": "10.0.3",
           "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
           "Newtonsoft.Json": "13.0.3",
           "Npgsql.Json.NET": "9.0.4",
-          "Weasel.Postgresql": "8.8.1"
+          "Weasel.Postgresql": "8.9.0"
         },
         "runtime": {
           "lib/net10.0/Marten.dll": {
-            "assemblyVersion": "8.22.2.0",
-            "fileVersion": "8.22.2.0"
+            "assemblyVersion": "8.23.0.0",
+            "fileVersion": "8.23.0.0"
           }
         },
         "compile": {
           "lib/net10.0/Marten.dll": {}
         }
       },
-      "Marten.AspNetCore/8.22.2": {
+      "Marten.AspNetCore/8.23.0": {
         "dependencies": {
-          "Marten": "8.22.2"
+          "Marten": "8.23.0"
         },
         "runtime": {
           "lib/net10.0/Marten.AspNetCore.dll": {
-            "assemblyVersion": "8.22.2.0",
-            "fileVersion": "8.22.2.0"
+            "assemblyVersion": "8.23.0.0",
+            "fileVersion": "8.23.0.0"
           }
         },
         "compile": {
@@ -676,14 +676,14 @@
           "lib/netstandard2.0/Microsoft.ApplicationInsights.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.3": {
+      "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.4": {
         "dependencies": {
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.0.1"
         },
         "runtime": {
           "lib/net10.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
-            "assemblyVersion": "10.0.3.0",
-            "fileVersion": "10.0.326.7603"
+            "assemblyVersion": "10.0.4.0",
+            "fileVersion": "10.0.426.12010"
           }
         },
         "compile": {
@@ -706,14 +706,14 @@
           "lib/net10.0/Microsoft.AspNetCore.Mvc.Testing.dll": {}
         }
       },
-      "Microsoft.AspNetCore.OpenApi/10.0.3": {
+      "Microsoft.AspNetCore.OpenApi/10.0.4": {
         "dependencies": {
           "Microsoft.OpenApi": "2.0.0"
         },
         "runtime": {
           "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "assemblyVersion": "10.0.3.0",
-            "fileVersion": "10.0.326.7603"
+            "assemblyVersion": "10.0.4.0",
+            "fileVersion": "10.0.426.12010"
           }
         },
         "compile": {
@@ -1735,6 +1735,17 @@
           "lib/netstandard2.1/NetTopologySuite.IO.PostGis.dll": {}
         }
       },
+      "NewId/4.0.1": {
+        "runtime": {
+          "lib/net6.0/NewId.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/NewId.dll": {}
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
@@ -2151,35 +2162,106 @@
           "lib/net10.0/Testcontainers.PostgreSql.dll": {}
         }
       },
-      "Weasel.Core/8.8.1": {
+      "Weasel.Core/8.9.0": {
         "dependencies": {
-          "JasperFx": "1.20.0"
+          "JasperFx": "1.21.0"
         },
         "runtime": {
           "lib/net10.0/Weasel.Core.dll": {
-            "assemblyVersion": "8.8.1.0",
-            "fileVersion": "8.8.1.0"
+            "assemblyVersion": "8.9.0.0",
+            "fileVersion": "8.9.0.0"
           }
         },
         "compile": {
           "lib/net10.0/Weasel.Core.dll": {}
         }
       },
-      "Weasel.Postgresql/8.8.1": {
+      "Weasel.Postgresql/8.9.0": {
         "dependencies": {
           "DistributedLock.Postgres": "1.3.0",
           "Npgsql": "10.0.0",
           "Npgsql.NetTopologySuite": "9.0.4",
-          "Weasel.Core": "8.8.1"
+          "Weasel.Core": "8.9.0"
         },
         "runtime": {
           "lib/net10.0/Weasel.Postgresql.dll": {
-            "assemblyVersion": "8.8.1.0",
-            "fileVersion": "8.8.1.0"
+            "assemblyVersion": "8.9.0.0",
+            "fileVersion": "8.9.0.0"
           }
         },
         "compile": {
           "lib/net10.0/Weasel.Postgresql.dll": {}
+        }
+      },
+      "WolverineFx/5.18.0": {
+        "dependencies": {
+          "JasperFx": "1.21.0",
+          "JasperFx.Events": "1.23.1",
+          "JasperFx.RuntimeCompiler": "4.4.0",
+          "Microsoft.Extensions.Caching.Memory": "10.0.0",
+          "Microsoft.Extensions.Configuration": "10.0.3",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.3",
+          "Microsoft.Extensions.Configuration.Binder": "10.0.3",
+          "Microsoft.Extensions.Configuration.Json": "10.0.0",
+          "Microsoft.Extensions.Hosting": "10.0.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "10.0.3",
+          "Microsoft.Extensions.ObjectPool": "10.0.3",
+          "NewId": "4.0.1",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net10.0/Wolverine.dll": {
+            "assemblyVersion": "5.18.0.0",
+            "fileVersion": "5.18.0.0"
+          }
+        },
+        "compile": {
+          "lib/net10.0/Wolverine.dll": {}
+        }
+      },
+      "WolverineFx.Marten/5.18.0": {
+        "dependencies": {
+          "Marten": "8.23.0",
+          "WolverineFx.Postgresql": "5.18.0"
+        },
+        "runtime": {
+          "lib/net10.0/Wolverine.Marten.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net10.0/Wolverine.Marten.dll": {}
+        }
+      },
+      "WolverineFx.Postgresql/5.18.0": {
+        "dependencies": {
+          "Weasel.Postgresql": "8.9.0",
+          "WolverineFx.RDBMS": "5.18.0"
+        },
+        "runtime": {
+          "lib/net10.0/Wolverine.Postgresql.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net10.0/Wolverine.Postgresql.dll": {}
+        }
+      },
+      "WolverineFx.RDBMS/5.18.0": {
+        "dependencies": {
+          "Weasel.Core": "8.9.0",
+          "WolverineFx": "5.18.0"
+        },
+        "runtime": {
+          "lib/net10.0/Wolverine.RDBMS.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net10.0/Wolverine.RDBMS.dll": {}
         }
       },
       "xunit.v3.assert/3.2.2": {
@@ -2300,11 +2382,12 @@
       "Software.Api/1.0.0": {
         "dependencies": {
           "Aspire.Npgsql": "13.1.2",
-          "Marten.AspNetCore": "8.22.2",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.3",
-          "Microsoft.AspNetCore.OpenApi": "10.0.3",
+          "Marten.AspNetCore": "8.23.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.4",
+          "Microsoft.AspNetCore.OpenApi": "10.0.4",
           "ServiceDefaults": "1.0.0",
-          "SoftwareShared": "1.0.0"
+          "SoftwareShared": "1.0.0",
+          "WolverineFx.Marten": "5.18.0"
         },
         "runtime": {
           "Software.Api.dll": {
@@ -2855,13 +2938,13 @@
         },
         "compileOnly": true
       },
-      "Microsoft.Extensions.Caching.Abstractions/10.0.0.0": {
+      "Microsoft.Extensions.Caching.Abstractions.Reference/10.0.0.0": {
         "compile": {
           "Microsoft.Extensions.Caching.Abstractions.dll": {}
         },
         "compileOnly": true
       },
-      "Microsoft.Extensions.Caching.Memory/10.0.0.0": {
+      "Microsoft.Extensions.Caching.Memory.Reference/10.0.0.0": {
         "compile": {
           "Microsoft.Extensions.Caching.Memory.dll": {}
         },
@@ -4175,6 +4258,22 @@
       "Microsoft.CodeAnalysis.Analyzers/3.11.0": {
         "compileOnly": true
       },
+      "Microsoft.Extensions.Caching.Abstractions/10.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "10.0.3"
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Caching.Memory/10.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.3",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.3",
+          "Microsoft.Extensions.Options": "10.0.3",
+          "Microsoft.Extensions.Primitives": "10.0.3"
+        },
+        "compileOnly": true
+      },
       "Microsoft.Extensions.Configuration/10.0.3": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "10.0.3",
@@ -4540,19 +4639,19 @@
       "path": "identitymodel/6.2.0",
       "hashPath": "identitymodel.6.2.0.nupkg.sha512"
     },
-    "JasperFx/1.20.0": {
+    "JasperFx/1.21.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ymb6lJnPITfnnw2IO2Ddtu4weXDcA5L80rXYKhF7H8IIsFCiTPQ1DAeGtNvsF22N3JBKNyKjAtg+fuTxgRMj3g==",
-      "path": "jasperfx/1.20.0",
-      "hashPath": "jasperfx.1.20.0.nupkg.sha512"
+      "sha512": "sha512-7a9Uu3XIo7dl2XjzX9oc/t/n9Yx/vb0DMOieWPYrQpQFtzYjxV0ndATygpmhJqWohidORHsg0QJRqp3+o8iDAw==",
+      "path": "jasperfx/1.21.0",
+      "hashPath": "jasperfx.1.21.0.nupkg.sha512"
     },
-    "JasperFx.Events/1.22.0": {
+    "JasperFx.Events/1.23.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QD01W8GFqHcMLYpqF4G5adkEHFexCntWSIWejvccVxmw8TTMmGf+EH8EoQI8EitdCc0XZ/ocGog2TQTRkqxG4A==",
-      "path": "jasperfx.events/1.22.0",
-      "hashPath": "jasperfx.events.1.22.0.nupkg.sha512"
+      "sha512": "sha512-zZHSIO//jvBdiv2KeRBtH6W1ufvumQJzOrlahTXk0aG1LZJCkn2Q+ok95jz71tYmse+sZkb857zuARTpYhuhFQ==",
+      "path": "jasperfx.events/1.23.1",
+      "hashPath": "jasperfx.events.1.23.1.nupkg.sha512"
     },
     "JasperFx.RuntimeCompiler/4.4.0": {
       "type": "package",
@@ -4561,19 +4660,19 @@
       "path": "jasperfx.runtimecompiler/4.4.0",
       "hashPath": "jasperfx.runtimecompiler.4.4.0.nupkg.sha512"
     },
-    "Marten/8.22.2": {
+    "Marten/8.23.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FXDB0Cg6EjBtCKPqNV7+1h5eu1fRVqGHnNfifWWamzrD9mqwDj1V4zDtYLjEBIDADXdOOl6+LnVSg8nBjicKIg==",
-      "path": "marten/8.22.2",
-      "hashPath": "marten.8.22.2.nupkg.sha512"
+      "sha512": "sha512-WpvO3Dg1VsBgQehv50L+JR8TAOqmzNJyll2WHTQpWLcOGOB2ooQvoOLewHx2kLfHNeH5d74SqsHhvUVZ0DG1wQ==",
+      "path": "marten/8.23.0",
+      "hashPath": "marten.8.23.0.nupkg.sha512"
     },
-    "Marten.AspNetCore/8.22.2": {
+    "Marten.AspNetCore/8.23.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HhyhLUZCTKU0pEpt8M7GUFMfHTkKvo+h9iN7WEufxvMBdF7fOrX1+nOy4f1++oqMHcsCDAz/f9XxnKaUAvGA0g==",
-      "path": "marten.aspnetcore/8.22.2",
-      "hashPath": "marten.aspnetcore.8.22.2.nupkg.sha512"
+      "sha512": "sha512-s5eO6KQgnuRxeIs3JuylZrRlYtJTLmDpTdNRhnOEZpdac4ZEj7vjsA4o0FblU+Ox0xT6xr1wlJwY9daE4IGuUQ==",
+      "path": "marten.aspnetcore/8.23.0",
+      "hashPath": "marten.aspnetcore.8.23.0.nupkg.sha512"
     },
     "Microsoft.ApplicationInsights/2.23.0": {
       "type": "package",
@@ -4582,12 +4681,12 @@
       "path": "microsoft.applicationinsights/2.23.0",
       "hashPath": "microsoft.applicationinsights.2.23.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.3": {
+    "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TBDs8e9y2vJHp14EwNfnIZUNrm6siw8PAAU5laOrYFuGgRxx8oCdxZyfTgp1Oy/icUk9h/XtpYBHPnXIG0f2/g==",
-      "path": "microsoft.aspnetcore.authentication.jwtbearer/10.0.3",
-      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.10.0.3.nupkg.sha512"
+      "sha512": "sha512-1mUwGyeGrGETdhlU/ZzNZeN2J6ugqf9EztZyG+WQIZwkaH5+lFNza15+cNCXhXNA0MKo1iohr5vj60eqR2J44Q==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/10.0.4",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.10.0.4.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.Testing/10.0.0": {
       "type": "package",
@@ -4596,12 +4695,12 @@
       "path": "microsoft.aspnetcore.mvc.testing/10.0.0",
       "hashPath": "microsoft.aspnetcore.mvc.testing.10.0.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.OpenApi/10.0.3": {
+    "Microsoft.AspNetCore.OpenApi/10.0.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-SAvSrKDgnY5GDjDAngOXxPhUvEKlTU/0zIq8zidqHvh/xnZBPs0Vc4LqwyvnmnafNnyUaivtRABz4K4wodXfSg==",
-      "path": "microsoft.aspnetcore.openapi/10.0.3",
-      "hashPath": "microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512"
+      "sha512": "sha512-OsEhbmT4Xenukau5YCR867gr/HmuAJ9DqMBPQGTcmdNU/TqBqdcnB+yLNwD/mTdkHzLBB+XG7cI4H1L5B1jx+Q==",
+      "path": "microsoft.aspnetcore.openapi/10.0.4",
+      "hashPath": "microsoft.aspnetcore.openapi.10.0.4.nupkg.sha512"
     },
     "Microsoft.AspNetCore.TestHost/10.0.0": {
       "type": "package",
@@ -4883,6 +4982,13 @@
       "path": "nettopologysuite.io.postgis/2.1.0",
       "hashPath": "nettopologysuite.io.postgis.2.1.0.nupkg.sha512"
     },
+    "NewId/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jegBasNndmG21G3BmT51suFDCIz/sLN81j+IxmkZ4iWoaDi8LygeHiyNnYbXz5OQh9nCRJFIx1+PJrlYi1Gc9Q==",
+      "path": "newid/4.0.1",
+      "hashPath": "newid.4.0.1.nupkg.sha512"
+    },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",
       "serviceable": true,
@@ -5093,19 +5199,47 @@
       "path": "testcontainers.postgresql/4.10.0",
       "hashPath": "testcontainers.postgresql.4.10.0.nupkg.sha512"
     },
-    "Weasel.Core/8.8.1": {
+    "Weasel.Core/8.9.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-iLPWsHuCIY9BAyQ8Zfnih5TfCyHRImTBJuw8fc1/Tbt4myjvV7sZCPeWS+YzCHH4gDfTbib16JoI/t6gEnI1QA==",
-      "path": "weasel.core/8.8.1",
-      "hashPath": "weasel.core.8.8.1.nupkg.sha512"
+      "sha512": "sha512-KQhkhN3vUgKhCw52joT7OkU6NeCP5EjeupOjdnyPLBPbkuXfUOFwHWHRJDo2FQx4Gwm6d9a2hcO0FvdRbnZIFQ==",
+      "path": "weasel.core/8.9.0",
+      "hashPath": "weasel.core.8.9.0.nupkg.sha512"
     },
-    "Weasel.Postgresql/8.8.1": {
+    "Weasel.Postgresql/8.9.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/AmwFgODjWMSY/T9waNpLC85ltF7CsGD4sian62dYh6YTfHw/w5t7y1oYEYWCa5eMLr+bMZS8xUiHDbzCQf7XQ==",
-      "path": "weasel.postgresql/8.8.1",
-      "hashPath": "weasel.postgresql.8.8.1.nupkg.sha512"
+      "sha512": "sha512-ACf2zgSisyAVdpNdlzMPVbQVlv8MiLjRdaElayi8bzckXFtK3wCUyVVk6pkNciAcxIedyTTVW+lSNLZZ4K2yXw==",
+      "path": "weasel.postgresql/8.9.0",
+      "hashPath": "weasel.postgresql.8.9.0.nupkg.sha512"
+    },
+    "WolverineFx/5.18.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I823ZKEMnjbdHKJZtoZc73Bc1tjdDuptWqVOkcLQLS0HgZ5oQzhXzDAFjQtnbQfeSqaMnsTUOBxEToGXZOhEeQ==",
+      "path": "wolverinefx/5.18.0",
+      "hashPath": "wolverinefx.5.18.0.nupkg.sha512"
+    },
+    "WolverineFx.Marten/5.18.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-y1WzpDNTpJ8dhWz6Cw2T5cn7zM6gS1EL3KV+l00nbGdwrgJ4HmpiEnkA8F6rKkSZzSroQH036qmGGteuLUpWrg==",
+      "path": "wolverinefx.marten/5.18.0",
+      "hashPath": "wolverinefx.marten.5.18.0.nupkg.sha512"
+    },
+    "WolverineFx.Postgresql/5.18.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9hgFBXMz6eYrzewO853hz92EB+YtLtEqqLd/jjaqYvWtMSCaUbvgGV+9YfZYJcQceO+2T7a/TnLG6oQvFoVyow==",
+      "path": "wolverinefx.postgresql/5.18.0",
+      "hashPath": "wolverinefx.postgresql.5.18.0.nupkg.sha512"
+    },
+    "WolverineFx.RDBMS/5.18.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KiicMp4/HbaUE0DkxVUsNqk+eRE8sO+CyuWA1TGYAu8AmOW69huG71TUV77rOI5Ps/QbPoxVWVMjqrBDG9cTFQ==",
+      "path": "wolverinefx.rdbms/5.18.0",
+      "hashPath": "wolverinefx.rdbms.5.18.0.nupkg.sha512"
     },
     "xunit.v3.assert/3.2.2": {
       "type": "package",
@@ -5611,12 +5745,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Extensions.Caching.Abstractions/10.0.0.0": {
+    "Microsoft.Extensions.Caching.Abstractions.Reference/10.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Extensions.Caching.Memory/10.0.0.0": {
+    "Microsoft.Extensions.Caching.Memory.Reference/10.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -6719,6 +6853,20 @@
       "sha512": "sha512-v/EW3UE8/lbEYHoC2Qq7AR/DnmvpgdtAMndfQNmpuIMx/Mto8L5JnuCfdBYtgvalQOtfNCnxFejxuRrryvUTsg==",
       "path": "microsoft.codeanalysis.analyzers/3.11.0",
       "hashPath": "microsoft.codeanalysis.analyzers.3.11.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Abstractions/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Zcoy6H9mSoGyvr7UvlGokEZrlZkcPCICPZr8mCsSt9U/N8eeCwCXwKF5bShdA66R0obxBCwP4AxomQHvVkC/uA==",
+      "path": "microsoft.extensions.caching.abstractions/10.0.0",
+      "hashPath": "microsoft.extensions.caching.abstractions.10.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Memory/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-krK19MKp0BNiR9rpBDW7PKSrTMLVlifS9am3CVc4O1Jq6GWz0o4F+sw5OSL4L3mVd56W8l6JRgghUa2KB51vOw==",
+      "path": "microsoft.extensions.caching.memory/10.0.0",
+      "hashPath": "microsoft.extensions.caching.memory.10.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/10.0.3": {
       "type": "package",
