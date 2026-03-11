@@ -1,0 +1,45 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/yarp/refs/heads/main/src/ReverseProxy/ConfigurationSchema.json",
+  "ReverseProxy": {
+    "Routes": {
+      "vendorsv2": {
+        "ClusterId": "vendorCluster",
+        "Match": {
+          "Path": "v2/vendors"
+        },
+        "Transforms": [
+          {
+            "PathRemovePrefix": "/v2"
+          }
+        ]
+        
+      },
+      "catchall": {
+        "ClusterId": "softwareCluster",
+        "Match": {
+
+
+          "Path": "{**catch-all}"
+        }
+      }
+
+    },
+    "Clusters": {
+      "vendorCluster": {
+        "Destinations": {
+          "vendorDestination1": {
+            "Address": "https://vendors-api"
+          }
+        }
+      },
+      "softwareCluster": {
+        "Destinations": {
+          "softwareDestination1": {
+            "Address": "https://software-api"
+          }
+        }
+      }
+
+    }
+  }
+}

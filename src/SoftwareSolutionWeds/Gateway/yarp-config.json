@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/yarp/refs/heads/main/src/ReverseProxy/ConfigurationSchema.json",
+  "ReverseProxy": {
+    "Routes": {
+      "catchall": {
+        "ClusterId": "softwareCluster",
+        "Match": {
+          "Path": "{**catch-all}"
+        }
+      }
+
+    },
+    "Clusters": {
+      "softwareCluster": {
+        "Destinations": {
+          "softwareDestination1": {             "Address": "https://software-api"
+          }
+        }
+      }
+
+    }
+  }
+}

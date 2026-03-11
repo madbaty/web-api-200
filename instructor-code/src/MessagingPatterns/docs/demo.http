@@ -1,0 +1,41 @@
+
+# 7131 is ApiOne and 7204 is ApiTwo
+# This is Queing With FanOut
+POST https://localhost:7131/messages
+Content-Type: application/json
+
+{
+  "message": "Call My Broker!"
+}
+
+
+### 
+
+# ApiTwo will sum up the numbers - toilet plunger. 
+
+POST https://localhost:7131/math
+Content-Type: application/json
+
+{
+ "numbers": [1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+
+### 
+POST https://localhost:7131/users 
+Content-Type: application/json
+
+{
+ "name": "Deputy Hawk"
+}
+
+###
+GET https://localhost:7204/users
+
+###
+PUT https://localhost:7131/users/3d1f85a9-dafd-4592-be0f-3d15f5d1dd44/name 
+Content-Type: application/json 
+
+{
+    "name": "Mr. C."
+}

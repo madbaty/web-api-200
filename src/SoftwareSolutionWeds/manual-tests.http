@@ -1,0 +1,29 @@
+@host = https://localhost:1337 
+# 1337 is gateway, 1338 is software api, 1339 is vendors api.
+### Adding a Vendor
+
+POST {{host}}/vendors HTTP/1.1
+Host: software-api
+Content-Type: application/json
+
+{"name":"Microsoft","url":"https://www.microsoft.com",
+"pointOfContact":{"name":"bill","email":"billg@microsoft.com","phone":"555-1212"}}
+
+
+### Change Point of Contact
+
+PUT {{host}}/vendors/cd4c8684-f0d6-429b-9e61-aeae03e25162/point-of-contact HTTP/1.1
+Host: software-api
+Content-Type: application/json
+
+{"name":"adam","email":"satya@microsoft.com","phone":"555-1212"}
+
+
+### GET all vendors
+
+GET {{host}}/vendors
+
+
+### Get individual vendor
+
+GET {{host}}/vendors/cd4c8684-f0d6-429b-9e61-aeae03e25162

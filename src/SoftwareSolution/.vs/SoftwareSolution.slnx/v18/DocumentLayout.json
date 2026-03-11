@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A18D303E-EF2C-55E8-752E-94C3F7003477}|Software.Api\\Software.Api.csproj|c:\\users\\student\\class\\web-api-200\\src\\softwaresolution\\software.api\\notificationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A18D303E-EF2C-55E8-752E-94C3F7003477}|Software.Api\\Software.Api.csproj|solutionrelative:software.api\\notificationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A18D303E-EF2C-55E8-752E-94C3F7003477}|Software.Api\\Software.Api.csproj|c:\\users\\student\\class\\web-api-200\\src\\softwaresolution\\software.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A18D303E-EF2C-55E8-752E-94C3F7003477}|Software.Api\\Software.Api.csproj|solutionrelative:software.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A18D303E-EF2C-55E8-752E-94C3F7003477}|Software.Api\\Software.Api.csproj|c:\\users\\student\\class\\web-api-200\\src\\softwaresolution\\software.api\\vendors\\vendorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A18D303E-EF2C-55E8-752E-94C3F7003477}|Software.Api\\Software.Api.csproj|solutionrelative:software.api\\vendors\\vendorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A18D303E-EF2C-55E8-752E-94C3F7003477}|Software.Api\\Software.Api.csproj|c:\\users\\student\\class\\web-api-200\\src\\softwaresolution\\software.api\\catalogitems\\operations\\addcatalogitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C40D3095-93E3-47A9-B3F7-1D2581841AC4}|SoftwareShared\\SoftwareShared.csproj|c:\\users\\student\\class\\web-api-200\\src\\softwaresolution\\softwareshared\\notificationtypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C40D3095-93E3-47A9-B3F7-1D2581841AC4}|SoftwareShared\\SoftwareShared.csproj|solutionrelative:softwareshared\\notificationtypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A18D303E-EF2C-55E8-752E-94C3F7003477}|Software.Api\\Software.Api.csproj|c:\\users\\student\\class\\web-api-200\\src\\softwaresolution\\software.api\\vendors\\vendorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A18D303E-EF2C-55E8-752E-94C3F7003477}|Software.Api\\Software.Api.csproj|solutionrelative:software.api\\vendors\\vendorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1EAD4F3-6A11-4396-9423-FBB3A29705D9}|Software.Tests\\Software.Tests.csproj|c:\\users\\student\\class\\web-api-200\\src\\softwaresolution\\software.tests\\vendors\\gettingallvendors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -130,11 +134,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "NotificationHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\NotificationHandler.cs",
+              "RelativeDocumentMoniker": "Software.Api\\NotificationHandler.cs",
+              "ToolTip": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\NotificationHandler.cs",
+              "RelativeToolTip": "Software.Api\\NotificationHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T19:48:38.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "NotificationBackgroundWorker.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\Vendors\\NotificationBackgroundWorker.cs",
               "RelativeDocumentMoniker": "Software.Api\\Vendors\\NotificationBackgroundWorker.cs",
@@ -147,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "GettingAllVendors.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Tests\\Vendors\\GettingAllVendors.cs",
               "RelativeDocumentMoniker": "Software.Tests\\Vendors\\GettingAllVendors.cs",
@@ -160,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Extensions.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\ServiceDefaults\\Extensions.cs",
               "RelativeDocumentMoniker": "ServiceDefaults\\Extensions.cs",
@@ -173,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "NotificationTypes.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\SoftwareShared\\NotificationTypes.cs",
               "RelativeDocumentMoniker": "SoftwareShared\\NotificationTypes.cs",
@@ -186,33 +203,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "VendorController.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\Vendors\\VendorController.cs",
               "RelativeDocumentMoniker": "Software.Api\\Vendors\\VendorController.cs",
               "ToolTip": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\Vendors\\VendorController.cs",
               "RelativeToolTip": "Software.Api\\Vendors\\VendorController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAB8AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T18:13:22.504Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\Program.cs",
               "RelativeDocumentMoniker": "Software.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\Program.cs*",
-              "RelativeToolTip": "Software.Api\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\Program.cs",
+              "RelativeToolTip": "Software.Api\\Program.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAAC0AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T16:25:54.053Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "SoftwareShared.csproj",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\SoftwareShared\\SoftwareShared.csproj",
               "RelativeDocumentMoniker": "SoftwareShared\\SoftwareShared.csproj",
@@ -225,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AddCatalogItem.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\CatalogItems\\Operations\\AddCatalogItem.cs",
               "RelativeDocumentMoniker": "Software.Api\\CatalogItems\\Operations\\AddCatalogItem.cs",
@@ -238,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "VendorExistsEndpointFilter.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\CatalogItems\\VendorExistsEndpointFilter.cs",
               "RelativeDocumentMoniker": "Software.Api\\CatalogItems\\VendorExistsEndpointFilter.cs",
@@ -251,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Notification.Api\\Program.cs",
               "RelativeDocumentMoniker": "Notification.Api\\Program.cs",
@@ -264,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "GetCatalogItemsByVendor.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\CatalogItems\\Operations\\GetCatalogItemsByVendor.cs",
               "RelativeDocumentMoniker": "Software.Api\\CatalogItems\\Operations\\GetCatalogItemsByVendor.cs",
@@ -277,12 +294,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Software.Api.csproj",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\Software.Api.csproj",
               "RelativeDocumentMoniker": "Software.Api\\Software.Api.csproj",
-              "ToolTip": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\Software.Api.csproj*",
-              "RelativeToolTip": "Software.Api\\Software.Api.csproj*",
+              "ToolTip": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\Software.Api.csproj",
+              "RelativeToolTip": "Software.Api\\Software.Api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-03-09T15:35:12.291Z",
@@ -290,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ServiceDefaults.csproj",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\ServiceDefaults\\ServiceDefaults.csproj",
               "RelativeDocumentMoniker": "ServiceDefaults\\ServiceDefaults.csproj",
@@ -303,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Notification.Api.http",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Notification.Api\\Notification.Api.http",
               "RelativeDocumentMoniker": "Notification.Api\\Notification.Api.http",
@@ -316,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "VendorDetailsModel.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\Vendors\\Models\\VendorDetailsModel.cs",
               "RelativeDocumentMoniker": "Software.Api\\Vendors\\Models\\VendorDetailsModel.cs",
@@ -329,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Software.Api\\appsettings.Development.json",
@@ -342,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "VendorSummaryModel.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\Vendors\\Models\\VendorSummaryModel.cs",
               "RelativeDocumentMoniker": "Software.Api\\Vendors\\Models\\VendorSummaryModel.cs",
@@ -355,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "CatalogExtensions.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\CatalogItems\\CatalogExtensions.cs",
               "RelativeDocumentMoniker": "Software.Api\\CatalogItems\\CatalogExtensions.cs",
@@ -368,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "VendorExistsFilter.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\Vendors\\VendorExistsFilter.cs",
               "RelativeDocumentMoniker": "Software.Api\\Vendors\\VendorExistsFilter.cs",
@@ -381,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "BlockedVendorsOptions.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\Vendors\\BlockedVendorsOptions.cs",
               "RelativeDocumentMoniker": "Software.Api\\Vendors\\BlockedVendorsOptions.cs",
@@ -394,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "GetAllCatalogItems.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\CatalogItems\\Operations\\GetAllCatalogItems.cs",
               "RelativeDocumentMoniker": "Software.Api\\CatalogItems\\Operations\\GetAllCatalogItems.cs",
@@ -407,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "AppHost.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\AppHost\\AppHost.cs",
               "RelativeDocumentMoniker": "AppHost\\AppHost.cs",
@@ -420,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "CatalogCreateModel.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\CatalogItems\\Operations\\CatalogCreateModel.cs",
               "RelativeDocumentMoniker": "Software.Api\\CatalogItems\\Operations\\CatalogCreateModel.cs",
@@ -433,7 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "DeprecateCatalogItem.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\CatalogItems\\Operations\\DeprecateCatalogItem.cs",
               "RelativeDocumentMoniker": "Software.Api\\CatalogItems\\Operations\\DeprecateCatalogItem.cs",
@@ -446,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Api\\appsettings.json",
               "RelativeDocumentMoniker": "Software.Api\\appsettings.json",
@@ -459,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "AddingAVendor.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Tests\\Vendors\\AddingAVendor.cs",
               "RelativeDocumentMoniker": "Software.Tests\\Vendors\\AddingAVendor.cs",
@@ -472,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "SoftwareSystemTestFixture.cs",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Tests\\Fixtures\\SoftwareSystemTestFixture.cs",
               "RelativeDocumentMoniker": "Software.Tests\\Fixtures\\SoftwareSystemTestFixture.cs",
@@ -485,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "AppHost.csproj",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\AppHost\\AppHost.csproj",
               "RelativeDocumentMoniker": "AppHost\\AppHost.csproj",
@@ -498,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "Software.Tests.csproj",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Software.Tests\\Software.Tests.csproj",
               "RelativeDocumentMoniker": "Software.Tests\\Software.Tests.csproj",
@@ -511,7 +528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Notification.Api.csproj",
               "DocumentMoniker": "C:\\Users\\Student\\class\\web-api-200\\src\\SoftwareSolution\\Notification.Api\\Notification.Api.csproj",
               "RelativeDocumentMoniker": "Notification.Api\\Notification.Api.csproj",

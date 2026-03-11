@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/docs/">
+    <File Path="demo.http" />
+  </Folder>
+  <Project Path="ApiOne/ApiOne.csproj" />
+  <Project Path="ApiTwo/ApiTwo.csproj" />
+  <Project Path="AppHost/AppHost.csproj" />
+  <Project Path="LateComer/LateComer.csproj" />
+  <Project Path="Messages/Messages.csproj" />
+  <Project Path="PlainListener/PlainListener.csproj" />
+  <Project Path="ServiceDefaults/ServiceDefaults.csproj" />
+</Solution>

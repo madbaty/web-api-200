@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="AppHost/AppHost.csproj" />
+  <Project Path="Gateway/Gateway.csproj" />
+  <Project Path="Notification.Api/Notification.Api.csproj" />
+  <Project Path="ServiceDefaults/ServiceDefaults.csproj" />
+  <Project Path="Software.Api/Software.Api.csproj" />
+  <Project Path="SoftwareShared/SoftwareShared.csproj" Id="c40d3095-93e3-47a9-b3f7-1d2581841ac4" />
+  <Project Path="Vendors.Api/Vendors.Api.csproj" />
+</Solution>
